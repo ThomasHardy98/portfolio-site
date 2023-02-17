@@ -11,18 +11,18 @@
   z-index: 1;
 }
 
-.nav-wrapper {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+.header-wrapper {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   display: flex;
   justify-content: space-between;
   font-family: $secondary_font;
 }
 
-.logo-container {
+.effects-button {
   color: $primary_color;
 }
 
-.nav-container {
+.nav-content {
   color: $secondary_color;
 }
