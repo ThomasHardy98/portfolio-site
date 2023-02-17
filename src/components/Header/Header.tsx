@@ -12,13 +12,19 @@ const Header = () => {
   };
 
   return (
-    <header className="header">
-      <div className="header-wrapper">
-        <button className="effects-button" onClick={toggleEffects}>
-          {effCtx.useRetro ? "Disable Retro Effects" : "Enable Retro Effects"}
-        </button>
-        <nav className="nav-content">Menu Dropdown</nav>
-      </div>
+    <header className="header-container">
+      <h1 className="name-heading">Thomas Hardy</h1>
+      <p className="short-description">React Developer</p>
+      <ul>
+        <li>Home</li>
+        <li>Projects</li>
+        <li>Contact</li>
+        <li>
+          <button className="effects-button" onClick={toggleEffects}>
+            {effCtx.useRetro ? "Disable Retro Effects" : "Enable Retro Effects"}
+          </button>
+        </li>
+      </ul>
     </header>
   );
 };

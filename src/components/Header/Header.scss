@@ -1,28 +1,29 @@
 @import "../../styles/colors.scss";
 @import "../../styles/fonts.scss";
+@import "../../styles/spacing.scss";
 
-.header {
+.header-container {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  left: calc($padding * 3);
+  top: calc($padding * 2);
   z-index: 1;
 }
 
-.header-wrapper {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  font-family: $secondary_font;
+.name-heading {
+  font-family: $primary_font;
+  font-size: 6em;
+  letter-spacing: 1.6px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.short-description {
+  margin: 0;
+  font-family: $primary_font;
+  font-size: 2em;
+  font-weight: 200;
 }
 
 .effects-button {
   color: $primary_color;
-}
-
-.nav-content {
-  color: $secondary_color;
 }

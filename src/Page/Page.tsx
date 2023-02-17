@@ -1,19 +1,15 @@
-import "Page/Page.scss";
+import { Fragment } from "react";
+
+import Header from "~/components/Header/Header";
+import Footer from "~/components/Footer/Footer";
 
 const Page = () => {
   return (
-    <section className="page">
-      <div className="page-container">
-        <div className="center-container">
-          <div className="left-side">
-            <div>Frontend Developer with 3 years commercial experience</div>
-          </div>
-          <div className="right-side">
-            <div>Frontend Developer with 3 years commercial experience</div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <Fragment>
+      <Header />
+      <main></main>
+      <Footer />
+    </Fragment>
   );
 };
 

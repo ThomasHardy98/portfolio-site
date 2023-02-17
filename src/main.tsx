@@ -6,7 +6,7 @@ import EffectsProvider from "./hooks/useRetro";
 
 import "main.scss";
 
-ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
+ReactDOM.createRoot(document.getElementById("page") as HTMLElement).render(
   <React.StrictMode>
     <EffectsProvider>
       <App />
