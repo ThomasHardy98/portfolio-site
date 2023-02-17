@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 import App from "App";
-import EffectsProvider from "./hooks/useRetro";
+import EffectsProvider from "hooks/useRetro";
 
 import "main.scss";
 

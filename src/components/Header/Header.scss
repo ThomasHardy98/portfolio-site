@@ -3,9 +3,8 @@
 @import "../../styles/spacing.scss";
 
 .header-container {
-  position: fixed;
-  left: calc($padding * 3);
-  top: calc($padding * 2);
+  position: relative;
+  padding: (calc($padding * 2));
   z-index: 1;
 }
 

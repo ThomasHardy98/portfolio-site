@@ -1,13 +1,17 @@
 import { Fragment } from "react";
 
-import Header from "~/components/Header/Header";
-import Footer from "~/components/Footer/Footer";
+import Header from "components/Header/Header";
+import Footer from "components/Footer/Footer";
+
+import "Page/Page.scss";
 
 const Page = () => {
   return (
     <Fragment>
       <Header />
-      <main></main>
+      <main className="content-container">
+        <div>Test Text</div>
+      </main>
       <Footer />
     </Fragment>
   );

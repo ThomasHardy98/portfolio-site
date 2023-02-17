@@ -1,6 +1,6 @@
 import { useContext } from "react";
 
-import { EffectsContext } from "~/context/EffectsContext";
+import { EffectsContext } from "context/EffectsContext";
 
 import "components/Header/Header.scss";
 

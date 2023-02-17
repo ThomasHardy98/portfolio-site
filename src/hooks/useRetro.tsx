@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import { EffectsContext } from "~/context/EffectsContext";
+import { EffectsContext } from "context/EffectsContext";
 
 interface EffectsContextProps {
   children: React.ReactNode;
