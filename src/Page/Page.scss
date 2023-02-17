@@ -1,0 +1,29 @@
+@import "../styles/colors.scss";
+@import "../styles/fonts.scss";
+
+.page {
+  display: flex;
+  height: 100vh;
+  background-color: #0c0c0c;
+  color: #fbfbfb;
+}
+
+.page-container {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.center-container {
+  display: flex;
+  flex: 1;
+}
+
+.left-side {
+  width: 50%;
+  text-align: center;
+}
+.right-side {
+  width: 50%;
+  text-align: center;
+}

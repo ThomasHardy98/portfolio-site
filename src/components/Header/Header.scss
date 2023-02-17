@@ -1,0 +1,28 @@
+@import "../../styles/colors.scss";
+@import "../../styles/fonts.scss";
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  z-index: 1;
+}
+
+.nav-wrapper {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  font-family: $secondary_font;
+}
+
+.logo-container {
+  color: $primary_color;
+}
+
+.nav-container {
+  color: $secondary_color;
+}
