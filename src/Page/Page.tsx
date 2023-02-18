@@ -1,5 +1,3 @@
-import { Fragment } from "react";
-
 import Header from "components/Header/Header";
 import Footer from "components/Footer/Footer";
 
@@ -7,13 +5,13 @@ import "Page/Page.scss";
 
 const Page = () => {
   return (
-    <Fragment>
+    <div className="content-container">
       <Header />
-      <main className="content-container">
+      <main className="main-container">
         <div>Test Text</div>
       </main>
       <Footer />
-    </Fragment>
+    </div>
   );
 };
 

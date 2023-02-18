@@ -2,10 +2,11 @@
 @import "../../styles/fonts.scss";
 @import "../../styles/spacing.scss";
 
-.footer {
+.footer-container {
+  display: flex;
   position: relative;
-  padding: (calc($padding * 2));
-  z-index: 1;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-content {
