@@ -17,7 +17,9 @@ const PageLoad = () => {
         <div className="loading-container">
           <div className="page-load">
             <div className="page-load-text">
-              <p className="text-1">Thomas Hardy - Portfolio</p>
+              <p className="text-1">
+                ~/Desktop/Projects/portfolio/portfolio-site
+              </p>
             </div>
           </div>
           <div className="TV-on" />
