@@ -8,7 +8,7 @@ const PageLoad = () => {
   useEffect(() => {
     setTimeout(() => {
       setShowElement(false);
-    }, 3000);
+    }, 4000);
   }, []);
 
   return (
@@ -17,8 +17,7 @@ const PageLoad = () => {
         <div className="loading-container">
           <div className="page-load">
             <div className="page-load-text">
-              <p className="text-1">Thomas Hardy</p>
-              <p className="text-2">Portfolio</p>
+              <p className="text-1">Thomas Hardy - Portfolio</p>
             </div>
           </div>
           <div className="TV-on" />

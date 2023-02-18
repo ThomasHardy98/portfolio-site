@@ -1,4 +1,4 @@
-import { useContext, Fragment } from "react";
+import { useContext } from "react";
 
 import { EffectsContext } from "context/EffectsContext";
 
@@ -23,6 +23,7 @@ const TV = () => {
       <div id="tv-border"></div>
       <div id="border-effect"></div>
       <div className="tv__details">
+        <div className="tv__audio" />
         <div className="tv__info">
           <h3>FONY</h3>
         </div>
