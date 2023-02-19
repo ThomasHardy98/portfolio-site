@@ -18,7 +18,7 @@ const PageLoad = () => {
           <div className="page-load">
             <div className="page-load-text">
               <p className="text-1">
-                ~/Desktop/Projects/portfolio/portfolio-site
+                ~/Desktop/Projects/portfolio/thomas_hardy
               </p>
             </div>
           </div>
