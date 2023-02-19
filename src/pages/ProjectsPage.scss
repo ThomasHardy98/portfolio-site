@@ -1,0 +1,21 @@
+@import "../styles/spacing.scss";
+@import "../styles/colors.scss";
+@import "../styles/spacing.scss";
+
+.page-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: $padding;
+}
+
+.main-container {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  color: $secondary_color;
+}

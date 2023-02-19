@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 
 import TV from "./components/TV/TV";
 import App from "App";
@@ -10,8 +11,10 @@ import "main.scss";
 ReactDOM.createRoot(document.getElementById("page") as HTMLElement).render(
   <React.StrictMode>
     <EffectsProvider>
-      <TV />
-      <App />
+      <BrowserRouter>
+        <TV />
+        <App />
+      </BrowserRouter>
     </EffectsProvider>
   </React.StrictMode>
 );

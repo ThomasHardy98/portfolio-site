@@ -1,5 +1,5 @@
-@import "../styles/spacing.scss";
-@import "../styles/colors.scss";
+@import "./styles/spacing.scss";
+@import "./styles/colors.scss";
 
 .content-container {
   display: flex;
@@ -12,16 +12,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
   overflow: hidden;
-  padding: $padding;
-}
-
-.main-container {
-  display: flex;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-  color: $secondary_color;
 }
 
 .text-glow {

@@ -1,13 +1,28 @@
-import { Fragment } from "react";
+import { Fragment, useContext } from "react";
+
+import { EffectsContext } from "context/EffectsContext";
 
 import PageLoad from "components/PageLoad/PageLoad";
-import Page from "Page/Page";
+import AnimatedRoutes from "components/AnimatedRoutes";
+
+import "App.scss";
 
 function App() {
+  const effCtx = useContext(EffectsContext);
+  let className = "";
+
+  if (effCtx.useRetro) {
+    className += "text-glow";
+  } else {
+    className += "";
+  }
+
   return (
     <Fragment>
       <PageLoad />
-      <Page />
+      <div className={`content-container ${className}`}>
+        <AnimatedRoutes />
+      </div>
     </Fragment>
   );
 }

@@ -75,8 +75,8 @@
 
 .TV-on {
   position: absolute;
-  width: $screen_size_width;
-  height: $screen_size_height;
+  width: 99%;
+  height: 99%;
   border-radius: 20px;
   background-color: #fff;
   animation: tvOn 0.8s linear forwards;
