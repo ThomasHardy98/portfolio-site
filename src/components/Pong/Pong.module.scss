@@ -1,0 +1,87 @@
+@import "../../styles/spacing.scss";
+
+.court {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: brightness(0.2);
+  text-align: center;
+}
+
+.court:before {
+  left: 50%;
+  content: "";
+  width: 10px;
+  height: 100%;
+  position: absolute;
+  border-left: 4px dashed #3f3;
+}
+
+.score {
+  color: #3f3;
+  font-size: 3rem;
+  font-weight: bold;
+  position: fixed;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.score b {
+  padding: $padding;
+}
+
+.horizontal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  animation: smoothbounceball 3s infinite alternate linear;
+}
+
+.ball {
+  position: fixed;
+  width: 14px;
+  height: 14px;
+  display: block;
+  background: #3f3;
+  border-radius: 50%;
+  transform: translate3d(10px, 0, 0);
+  animation: leftright 4s infinite alternate linear;
+}
+
+.playerOne,
+.playerTwo {
+  background: #3f3;
+  position: absolute;
+  width: 7px;
+  height: 6%;
+}
+
+.playerOne {
+  left: 1%;
+}
+
+.playerTwo {
+  right: 1%;
+  animation-delay: 2.1s;
+}
+
+@keyframes leftright {
+  from {
+    transform: translate(1vw, 0);
+  }
+  to {
+    transform: translate(93vw, 0);
+  }
+}
+
+@keyframes smoothbounceball {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(0, 100%);
+  }
+}

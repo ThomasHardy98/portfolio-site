@@ -1,0 +1,14 @@
+@import "styles/fonts.scss";
+
+:global(body) {
+  margin: 0;
+}
+
+:global(h1) {
+  font-family: $primary_font;
+}
+
+:global(p) {
+  font-family: $secondary_font;
+  font-size: 1rem;
+}

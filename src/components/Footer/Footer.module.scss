@@ -1,14 +1,14 @@
 @import "../../styles/colors.scss";
 @import "../../styles/fonts.scss";
 
-.footer-container {
+.footerContainer {
   display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
 }
 
-.footer-content {
+.footerContent {
   color: $secondary_color;
   font-family: $secondary_font;
 }

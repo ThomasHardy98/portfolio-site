@@ -1,0 +1,44 @@
+@import "./styles/spacing.scss";
+@import "./styles/colors.scss";
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: $screen_size_width;
+  height: $screen_size_height;
+  box-sizing: border-box;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: black;
+}
+
+.textGlow {
+  text-shadow: 0 0 4px black;
+}
+
+.retroEffects::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
+    linear-gradient(
+      90deg,
+      rgba(255, 0, 0, 0.06),
+      rgba(0, 255, 0, 0.02),
+      rgba(0, 0, 255, 0.06)
+    );
+  z-index: 2;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+  border-radius: 20px;
+}

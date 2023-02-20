@@ -1,17 +1,17 @@
-@import "../styles/spacing.scss";
 @import "../styles/colors.scss";
 @import "../styles/spacing.scss";
 
-.page-container {
+.pageContainer {
   flex: 1;
   display: flex;
   align-items: center;
   flex-direction: column;
   border-radius: 20px;
   padding: $padding;
+  align-self: stretch;
 }
 
-.main-container {
+.mainContainer {
   display: flex;
   position: relative;
   justify-content: space-between;

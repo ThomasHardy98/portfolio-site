@@ -4,23 +4,22 @@ import { EffectsContext } from "context/EffectsContext";
 
 import PageLoad from "components/PageLoad/PageLoad";
 import AnimatedRoutes from "components/AnimatedRoutes";
+import Pong from "./components/Pong/Pong";
 
-import "App.scss";
+import styles from "App.module.scss";
 
 function App() {
   const effCtx = useContext(EffectsContext);
-  let className = "";
 
-  if (effCtx.useRetro) {
-    className += "text-glow";
-  } else {
-    className += "";
-  }
+  // Add theme switching, when serious button is pressed. Remove pong and switch to light readable theme
 
   return (
     <Fragment>
       <PageLoad />
-      <div className={`content-container ${className}`}>
+      <div
+        className={`${styles.contentContainer} ${styles.textGlow} ${styles.retroEffects}`}
+      >
+        {effCtx.useRetro && <Pong />}
         <AnimatedRoutes />
       </div>
     </Fragment>

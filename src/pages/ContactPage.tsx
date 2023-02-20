@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 
 import Footer from "components/Footer/Footer";
 
-import styles from "pages/ProjectsPage.module.scss";
+import styles from "pages/ContactPage.module.scss";
 
-const ProjectsPage = () => {
+const ContactPage = () => {
   return (
     <motion.div
       initial={{
@@ -26,11 +26,11 @@ const ProjectsPage = () => {
       className={styles.pageContainer}
     >
       <main className={styles.mainContainer}>
-        <div>This is the projects page.</div>
+        <div>This is the contact page.</div>
       </main>
       <Footer />
     </motion.div>
   );
 };
 
-export default ProjectsPage;
+export default ContactPage;

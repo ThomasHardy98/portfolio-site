@@ -1,0 +1,83 @@
+@import "../../styles/colors.scss";
+
+.tvDetails {
+  width: 90%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5vh;
+}
+
+.tvInfo {
+  text-align: center;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.tvInfo h3 {
+  color: #b5b6b0;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 1.4rem;
+}
+
+.tvAudio {
+  height: 30px;
+  width: 20%;
+  border-radius: 30px;
+  background-image: linear-gradient(
+      45deg,
+      #242424 25%,
+      transparent 25% 75%,
+      #161616 75%
+    ),
+    linear-gradient(-45deg, #282828 25%, transparent 25% 75%, #000 75%);
+  background-size: 5px 5px;
+  flex: 1;
+}
+
+.tvControls {
+  position: relative;
+  right: 0;
+  align-items: center;
+  flex: 1;
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+}
+
+.powerIcon {
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 4px;
+}
+
+.powerLight {
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px #000000, 0 0 14px 2px #030303, 0 0 9px 2px #000;
+  background-color: #000000;
+  margin-bottom: 6px;
+  animation: powerLightOn 0.2s linear forwards;
+  animation-delay: 3.5s;
+}
+
+.powerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 40px;
+}
+
+@keyframes powerLightOn {
+  0% {
+  }
+  100% {
+    box-shadow: 0 0 4px 2px #fff, 0 0 14px 2px #f00, 0 0 9px 2px #f00;
+    background-color: #fff;
+  }
+}

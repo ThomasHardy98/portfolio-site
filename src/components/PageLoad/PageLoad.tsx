@@ -1,6 +1,6 @@
 import { useEffect, useState, Fragment } from "react";
 
-import "components/PageLoad/PageLoad.scss";
+import styles from "components/PageLoad/PageLoad.module.scss";
 
 const PageLoad = () => {
   const [showElement, setShowElement] = useState(true);
@@ -14,15 +14,15 @@ const PageLoad = () => {
   return (
     <Fragment>
       {showElement && (
-        <div className="loading-container">
-          <div className="page-load">
-            <div className="page-load-text">
-              <p className="text-1">
+        <div className={styles.loadingContainer}>
+          <div className={styles.pageLoad}>
+            <div className={styles.pageLoadText}>
+              <p className={styles.textOne}>
                 ~/Desktop/Projects/portfolio/thomas_hardy
               </p>
             </div>
           </div>
-          <div className="TV-on" />
+          <div className={styles.tvOn} />
         </div>
       )}
     </Fragment>

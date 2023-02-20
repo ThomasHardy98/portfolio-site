@@ -1,9 +1,8 @@
 import { motion } from "framer-motion";
 
-import Header from "components/Header/Header";
 import Footer from "components/Footer/Footer";
 
-import "pages/LandingPage.scss";
+import styles from "pages/LandingPage.module.scss";
 
 const LandingPage = () => {
   return (
@@ -24,11 +23,16 @@ const LandingPage = () => {
         backgroundColor: "hsla(0, 00, 100, 0.8)",
       }}
       transition={{ bounce: 0 }}
-      className="page-container"
+      className={styles.pageContainer}
     >
-      <Header />
-      <main className="main-container">
-        <div>This is the landing page.</div>
+      <main className={styles.mainContainer}>
+        <div className={styles.headingContainer}>
+          <h1 className={styles.heading}>Thanks for tuning in.</h1>
+          <p className={styles.subHeading}>
+            I'm Thomas Hardy a React Developer with 3 years commercial
+            experience.
+          </p>
+        </div>
       </main>
       <Footer />
     </motion.div>
