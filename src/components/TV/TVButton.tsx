@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import styles from "./TVButton.module.scss";
 
 type TVButtonProps = {
@@ -7,11 +9,15 @@ type TVButtonProps = {
 };
 
 const TVButton = ({ onClick, name, color }: TVButtonProps) => {
+  const clickHandler = (e: React.MouseEvent<HTMLElement>) => {
+    onClick(e);
+  };
+
   return (
     <div className={styles.buttonContainer}>
       <button
         className={styles.tvButton}
-        onClick={onClick}
+        onClick={clickHandler}
         style={{ backgroundColor: color }}
       >
         <div className={styles.buttonShine} />

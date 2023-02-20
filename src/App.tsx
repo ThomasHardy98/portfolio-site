@@ -12,6 +12,7 @@ function App() {
   const effCtx = useContext(EffectsContext);
 
   // Add theme switching, when serious button is pressed. Remove pong and switch to light readable theme
+  // Make buttons toggle depending on what is enabled
 
   return (
     <Fragment>
