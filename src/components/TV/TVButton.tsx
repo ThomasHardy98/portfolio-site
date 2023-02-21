@@ -1,24 +1,21 @@
-import { useState } from "react";
-
-import styles from "./TVButton.module.scss";
+import styles from "components/TV/TVButton.module.scss";
 
 type TVButtonProps = {
-  onClick: (e: React.MouseEvent<HTMLElement>) => void;
+  onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
   name: string;
+  id: string;
+  className?: string;
   color?: string;
 };
 
-const TVButton = ({ onClick, name, color }: TVButtonProps) => {
-  const clickHandler = (e: React.MouseEvent<HTMLElement>) => {
-    onClick(e);
-  };
-
+const TVButton = ({ onClick, name, id, className, color }: TVButtonProps) => {
   return (
     <div className={styles.buttonContainer}>
       <button
-        className={styles.tvButton}
-        onClick={clickHandler}
+        className={`${styles.tvButton} ${className}`}
+        onClick={onClick}
         style={{ backgroundColor: color }}
+        id={id}
       >
         <div className={styles.buttonShine} />
       </button>

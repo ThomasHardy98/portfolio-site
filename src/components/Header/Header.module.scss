@@ -73,6 +73,16 @@
   margin-left: 40px;
 }
 
+.tvButtonActive {
+  border-radius: 50%;
+  background-color: #404040;
+  width: 34px;
+  height: 34px;
+  border: 1px solid;
+  box-shadow: inset 2px 2px 21px black;
+  margin-bottom: 6px;
+}
+
 @keyframes powerLightOn {
   0% {
   }
