@@ -6,17 +6,15 @@
   width: 100%;
   position: fixed;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: end;
 }
 
 #tvBorder {
-  position: fixed;
-  height: 100%;
+  position: relative;
+  height: 93%;
   width: 100%;
   background: linear-gradient(178deg, #141414 0%, #141414 100%);
-  display: flex;
-  justify-content: center;
   pointer-events: none;
 }
 
