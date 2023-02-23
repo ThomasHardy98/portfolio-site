@@ -14,10 +14,10 @@
 .court:before {
   left: 50%;
   content: "";
-  width: 10px;
   height: 100%;
   position: absolute;
   border-left: 4px dashed #3f3;
+  transform: translate(-50%);
 }
 
 .score {
@@ -27,6 +27,7 @@
   position: fixed;
   width: 100%;
   margin-top: 20px;
+  text-shadow: none;
 }
 
 .score b {

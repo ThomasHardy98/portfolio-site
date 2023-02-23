@@ -60,7 +60,7 @@ const Header = () => {
             onClick={toggleEffects}
             name="Serious"
             id="5"
-            color="#842020"
+            color="rgb(225 0 0)"
           />
           <div className={styles.powerContainer}>
             <div className={styles.powerLight} />

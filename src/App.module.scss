@@ -15,11 +15,33 @@
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  background-color: black;
+  background-image: radial-gradient(
+    circle,
+    #1d1d1d,
+    #1b1b1b,
+    #191919,
+    #181818,
+    #161616,
+    #151515,
+    #151515,
+    #141414,
+    #141414,
+    #141414,
+    #141414,
+    #141414
+  );
 }
 
 .textGlow {
   text-shadow: 0 0 4px black;
+
+  img {
+    box-shadow: 0 0 10px black;
+  }
+
+  svg {
+    box-shadow: 0 0 4px black;
+  }
 }
 
 .retroEffects::before {
@@ -39,6 +61,5 @@
     );
   z-index: 2;
   background-size: 100% 2px, 3px 100%;
-  pointer-events: none;
   border-radius: 20px;
 }
