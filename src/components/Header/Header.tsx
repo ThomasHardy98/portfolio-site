@@ -29,7 +29,7 @@ const Header = () => {
           <TVButtonGeneric onClick={toggleEffects} name="Serious" />
           <div className={styles.powerContainer}>
             <div className={styles.powerLight} />
-            <img className={styles.powerIcon} src="src\assets\power.png" />
+            <img className={styles.powerIcon} src="assets/power.png" />
           </div>
         </div>
       </header>

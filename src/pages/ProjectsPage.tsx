@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 import Footer from "components/Footer/Footer";
-import Project from "~/components/UI/Project";
+import Project from "components/UI/Project";
 
 import styles from "pages/ProjectsPage.module.scss";
 
@@ -28,7 +28,7 @@ const ProjectsPage = () => {
     >
       <main className={styles.mainContainer}>
         <Project
-          imageSrc="src\assets\weather_app_picture.png"
+          imageSrc="assets/weather_app_picture.png"
           title="Weather App"
           techStack="ReactJS, Typescript"
           description="Short description of the weather app project."

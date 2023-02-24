@@ -29,7 +29,7 @@ const LandingPage = () => {
         <div className={styles.contentContainer}>
           <div className={styles.imageContainer}>
             <img
-              src="src\assets\profile_picture.jpg"
+              src="assets/profile_picture.jpg"
               className={styles.profileImage}
             ></img>
           </div>
