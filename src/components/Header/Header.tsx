@@ -1,27 +1,17 @@
-import { useContext, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
 
 import { EffectsContext } from "context/EffectsContext";
 
-import TVButton from "components/TV/TVButton";
+import TVButtonNav from "components/TV/TVButtonNav";
+import TVButtonGeneric from "../TV/TVButtonGeneric";
 
 import styles from "components/Header/Header.module.scss";
 
 const Header = () => {
-  let navigate = useNavigate();
-  const [isActive, setIsActive] = useState("1");
   const effCtx = useContext(EffectsContext);
 
   const toggleEffects = () => {
     effCtx.setRetroEffects((effCtx.useRetro = !effCtx.useRetro));
-  };
-
-  const goToRoute = (url: string) => {
-    return (event: React.MouseEvent<HTMLButtonElement>) => {
-      event.preventDefault();
-      setIsActive(event.currentTarget.id);
-      navigate(url);
-    };
   };
 
   return (
@@ -32,36 +22,11 @@ const Header = () => {
           <h3>FONY</h3>
         </div>
         <div className={styles.tvControls}>
-          <TVButton
-            onClick={goToRoute("/")}
-            name="Home"
-            id="1"
-            className={"1" === isActive ? `${styles.tvButtonActive}` : ""}
-          />
-          <TVButton
-            onClick={goToRoute("/projects")}
-            name="Projects"
-            id="2"
-            className={"2" === isActive ? `${styles.tvButtonActive}` : ""}
-          />
-          <TVButton
-            onClick={goToRoute("/skills")}
-            name="Skills"
-            id="3"
-            className={"3" === isActive ? `${styles.tvButtonActive}` : ""}
-          />
-          <TVButton
-            onClick={goToRoute("/contact")}
-            name="Contact"
-            id="4"
-            className={"4" === isActive ? `${styles.tvButtonActive}` : ""}
-          />
-          <TVButton
-            onClick={toggleEffects}
-            name="Serious"
-            id="5"
-            color="rgb(225 0 0)"
-          />
+          <TVButtonNav url="/" name="Home" />
+          <TVButtonNav url="/projects" name="Projects" />
+          <TVButtonNav url="/skills" name="Skills" />
+          <TVButtonNav url="/contact" name="Contact" />
+          <TVButtonGeneric onClick={toggleEffects} name="Serious" />
           <div className={styles.powerContainer}>
             <div className={styles.powerLight} />
             <img className={styles.powerIcon} src="src\assets\power.png" />

@@ -20,4 +20,18 @@
   align-items: center;
   flex-grow: 1;
   color: $secondary_color;
+  width: 100%;
+}
+
+.projectCard {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  background-color: #1e1e1e;
+  color: $secondary_color;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0 0 4px black;
 }

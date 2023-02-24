@@ -10,15 +10,26 @@
   background-color: #424140;
   width: 34px;
   height: 34px;
-  border: 1px solid;
+  border: 1px solid black;
   box-shadow: inset 0px 0px 8px black;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+.tvButtonActive {
+  border-radius: 50%;
+  background-color: #404040;
+  width: 34px;
+  height: 34px;
+  border: 1px solid black;
+  box-shadow: inset 2px 2px 21px black;
   margin-bottom: 6px;
   cursor: pointer;
 }
 
 .tvButton:active {
   background-color: #404040;
-  border: 1px solid;
+  border: 1px solid black;
   box-shadow: inset 2px 2px 21px black;
 }
 
@@ -34,8 +45,8 @@
   border-radius: 100%;
   border: 0 solid #6e6e6e;
   border-width: 0 3px 0 0;
-  top: -8px;
-  left: 3px;
+  top: 9px;
+  left: 12px;
 }
 
 .effectsButtonLabel {

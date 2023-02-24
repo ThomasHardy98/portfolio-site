@@ -26,7 +26,10 @@ const ProjectsPage = () => {
       className={styles.pageContainer}
     >
       <main className={styles.mainContainer}>
-        <div>This is the projects page.</div>
+        <div className={styles.projectCard}>Project 1 here</div>
+        <div className={styles.projectCard}>Project 2 here</div>
+        <div className={styles.projectCard}>Project 3 here</div>
+        <div className={styles.projectCard}>Project 4 here</div>
       </main>
       <Footer />
     </motion.div>

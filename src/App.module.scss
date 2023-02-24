@@ -15,21 +15,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  background-image: radial-gradient(
-    circle,
-    #1d1d1d,
-    #1b1b1b,
-    #191919,
-    #181818,
-    #161616,
-    #151515,
-    #151515,
-    #141414,
-    #141414,
-    #141414,
-    #141414,
-    #141414
-  );
+  background: radial-gradient(circle at center, #222, black 90%) no-repeat;
 }
 
 .textGlow {
