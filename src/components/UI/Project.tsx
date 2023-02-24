@@ -24,11 +24,11 @@ const Project = ({
       <p className={styles.projectStack}>{techStack}</p>
       <p className={styles.projectDescription}>{description}</p>
       <div className={styles.buttonWrapper}>
-        <a className={styles.button} href={githubLink} target="_blank">
-          Source Code
-        </a>
         <a className={styles.button} href={liveLink} target="_blank">
           Live Site
+        </a>
+        <a className={styles.button} href={githubLink} target="_blank">
+          Source Code
         </a>
       </div>
     </div>
