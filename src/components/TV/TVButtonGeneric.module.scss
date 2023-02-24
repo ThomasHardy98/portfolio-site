@@ -16,6 +16,10 @@
   cursor: pointer;
 }
 
+.tvButton:hover {
+  border: 1px solid white;
+}
+
 .tvButton:active {
   background-color: #b30101;
   border: 1px solid black;

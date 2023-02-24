@@ -32,30 +32,30 @@ const ProjectsPage = () => {
           title="Weather App"
           techStack="ReactJS, Typescript"
           description="Short description of the weather app project."
+          githubLink="https://github.com/ThomasHardy98/weather-app"
+          liveLink="https://thomashardyweatherapp.com"
+        />
+        <Project
+          imageSrc=""
+          title="Project 2"
+          techStack=""
+          description=""
           githubLink=""
           liveLink=""
         />
         <Project
-          imageSrc="src\assets\weather_app_picture.png"
-          title="Weather App"
-          techStack="ReactJS, Typescript"
-          description="Short description of the weather app project."
+          imageSrc=""
+          title="Project 3"
+          techStack=""
+          description=""
           githubLink=""
           liveLink=""
         />
         <Project
-          imageSrc="src\assets\weather_app_picture.png"
-          title="Weather App"
-          techStack="ReactJS, Typescript"
-          description="Short description of the weather app project."
-          githubLink=""
-          liveLink=""
-        />
-        <Project
-          imageSrc="src\assets\weather_app_picture.png"
-          title="Weather App"
-          techStack="ReactJS, Typescript"
-          description="Short description of the weather app project."
+          imageSrc=""
+          title="Project 4"
+          techStack=""
+          description=""
           githubLink=""
           liveLink=""
         />

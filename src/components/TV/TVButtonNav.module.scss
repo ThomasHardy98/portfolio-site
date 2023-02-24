@@ -14,6 +14,11 @@
   box-shadow: inset 0px 0px 8px black;
   margin-bottom: 6px;
   cursor: pointer;
+  transition: 0.2s;
+}
+
+.tvButton:hover {
+  border: 1px solid white;
 }
 
 .tvButtonActive {
