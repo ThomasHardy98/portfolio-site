@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 
 import Footer from "components/Footer/Footer";
+import Project from "~/components/UI/Project";
 
 import styles from "pages/ProjectsPage.module.scss";
 
@@ -26,10 +27,38 @@ const ProjectsPage = () => {
       className={styles.pageContainer}
     >
       <main className={styles.mainContainer}>
-        <div className={styles.projectCard}>Project 1 here</div>
-        <div className={styles.projectCard}>Project 2 here</div>
-        <div className={styles.projectCard}>Project 3 here</div>
-        <div className={styles.projectCard}>Project 4 here</div>
+        <Project
+          imageSrc="src\assets\weather_app_picture.png"
+          title="Weather App"
+          techStack="ReactJS, Typescript"
+          description="Short description of the weather app project."
+          githubLink=""
+          liveLink=""
+        />
+        <Project
+          imageSrc="src\assets\weather_app_picture.png"
+          title="Weather App"
+          techStack="ReactJS, Typescript"
+          description="Short description of the weather app project."
+          githubLink=""
+          liveLink=""
+        />
+        <Project
+          imageSrc="src\assets\weather_app_picture.png"
+          title="Weather App"
+          techStack="ReactJS, Typescript"
+          description="Short description of the weather app project."
+          githubLink=""
+          liveLink=""
+        />
+        <Project
+          imageSrc="src\assets\weather_app_picture.png"
+          title="Weather App"
+          techStack="ReactJS, Typescript"
+          description="Short description of the weather app project."
+          githubLink=""
+          liveLink=""
+        />
       </main>
       <Footer />
     </motion.div>

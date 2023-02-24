@@ -1,0 +1,50 @@
+@import "../../styles/spacing.scss";
+@import "../../styles/colors.scss";
+@import "../../styles/spacing.scss";
+
+.projectCard {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  background-color: #1e1e1e;
+  color: $secondary_color;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0 0 4px black;
+  flex-direction: column;
+}
+
+.projectImage {
+  flex: 1;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.projectTitle {
+  margin: 10px 0 10px 0;
+}
+
+.projectStack {
+  margin: 10px 0 10px 0;
+}
+
+.projectDescription {
+  margin: 10px 0 10px 0;
+}
+
+.buttonWrapper {
+  display: flex;
+  margin: 10px 0 10px 0;
+}
+
+.projectGithub {
+  margin: 0 10px 0 10px;
+}
+
+.projectLive {
+  margin: 0 10px 0 10px;
+}
