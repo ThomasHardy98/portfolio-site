@@ -16,9 +16,7 @@ function App() {
   return (
     <Fragment>
       <PageLoad />
-      <div
-        className={`${styles.contentContainer} ${styles.textGlow} ${styles.retroEffects}`}
-      >
+      <div className={`${styles.contentContainer} ${styles.retroEffects}`}>
         {effCtx.useRetro && <Pong />}
         <AnimatedRoutes />
       </div>

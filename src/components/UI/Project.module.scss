@@ -1,6 +1,6 @@
 @import "../../styles/spacing.scss";
 @import "../../styles/colors.scss";
-@import "../../styles/spacing.scss";
+@import "../../styles/fonts.scss";
 
 .projectCard {
   flex: 1;
@@ -23,7 +23,6 @@
   width: 100%;
   object-fit: cover;
   border-radius: 10px;
-  box-shadow: none;
 }
 
 .projectTitle {
@@ -44,6 +43,8 @@
 }
 
 .button {
+  font-family: $primary_font;
+  text-transform: uppercase;
   margin: 0 10px 0 10px;
   background-color: white;
   text-decoration: none;
@@ -51,7 +52,8 @@
   padding: 10px;
   border-radius: 10px;
   transition: 0.2s;
-  text-shadow: none;
+  font-weight: bold;
+  font-size: 0.8rem;
 }
 
 .button:hover {

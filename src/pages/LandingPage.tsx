@@ -37,7 +37,7 @@ const LandingPage = () => {
             <div className={styles.innerTextContainer}>
               <p className={styles.subHeading}>
                 I'm Thomas Hardy, a Front End Developer with 3 years commercial
-                experience.
+                experience
               </p>
               <p className={styles.contentText}>
                 I have experience using HTML5, CSS, JavaScript, ReactJS and
