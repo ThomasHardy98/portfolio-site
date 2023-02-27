@@ -112,3 +112,33 @@
 .errorText::first-letter {
   text-transform: capitalize;
 }
+
+.successMessage {
+  color: $secondary_color;
+  font-size: 0.9rem;
+  margin-top: 14px;
+  padding: 8px;
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 4px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.8px);
+  -webkit-backdrop-filter: blur(3.8px);
+  border: 1px solid green;
+}
+
+.errorMessage {
+  color: $secondary_color;
+  font-size: 0.9rem;
+  margin-top: 14px;
+  padding: 8px;
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 4px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.8px);
+  -webkit-backdrop-filter: blur(3.8px);
+  border: 1px solid red;
+}

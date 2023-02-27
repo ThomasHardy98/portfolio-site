@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -25,8 +26,15 @@ const ContactForm = () => {
     reset,
   } = useForm<ContactData>({ mode: "onBlur", resolver: yupResolver(schema) });
 
+  const [emailSent, setEmailSent] = useState(false);
+  const [emailError, setEmailError] = useState(false);
+
+  useEffect(() => {
+    setEmailSent(false);
+    setEmailError(false);
+  }, []);
+
   const onSubmit: SubmitHandler<ContactData> = (data) => {
-    // Send email using entered details
     send(
       import.meta.env.VITE_EMAIL_SERVICE_ID,
       import.meta.env.VITE_EMAIL_TEMPLATE_ID,
@@ -36,12 +44,14 @@ const ContactForm = () => {
       .then((response) => {
         console.log("Sent");
         reset();
-        // Output success message
+        setEmailSent(true);
+        setEmailError(false);
       })
       .catch((err) => {
         console.log("Failed");
         reset();
-        // Output error message
+        setEmailError(true);
+        setEmailSent(false);
       });
   };
 
@@ -91,6 +101,16 @@ const ContactForm = () => {
           )}
         </div>
         <button type="submit">Submit</button>
+        {!emailSent && (
+          <div className={styles.successMessage}>
+            Email was successfully sent
+          </div>
+        )}
+        {emailError && (
+          <div className={styles.errorMessage}>
+            Email failed to send, please try again later
+          </div>
+        )}
       </form>
     </div>
   );
