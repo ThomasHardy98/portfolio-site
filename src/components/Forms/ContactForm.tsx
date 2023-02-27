@@ -29,11 +29,6 @@ const ContactForm = () => {
   const [emailSent, setEmailSent] = useState(false);
   const [emailError, setEmailError] = useState(false);
 
-  useEffect(() => {
-    setEmailSent(false);
-    setEmailError(false);
-  }, []);
-
   const onSubmit: SubmitHandler<ContactData> = (data) => {
     send(
       import.meta.env.VITE_EMAIL_SERVICE_ID,
@@ -101,7 +96,7 @@ const ContactForm = () => {
           )}
         </div>
         <button type="submit">Submit</button>
-        {!emailSent && (
+        {emailSent && (
           <div className={styles.successMessage}>
             Email was successfully sent
           </div>
