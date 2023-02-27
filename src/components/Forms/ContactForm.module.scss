@@ -1,0 +1,114 @@
+@import "../../styles/colors.scss";
+@import "../../styles/fonts.scss";
+
+.formWrapper {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+
+.formContainer {
+  width: 75%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 65%;
+}
+
+.fieldContainer {
+  position: relative;
+  margin-bottom: 70px;
+}
+
+.floatingLabel {
+  position: absolute;
+  top: 0;
+  font-size: 1rem;
+  color: $secondary_color;
+  display: flex;
+  align-items: center;
+  cursor: text;
+  transition: 0.3s ease-in-out;
+  pointer-events: none;
+  height: 30px;
+  padding: 25px 8px 25px 8px;
+}
+
+.inputText {
+  font-size: 1rem;
+  width: 100%;
+  height: 30px;
+  padding: 25px 8px 25px 8px;
+  color: $secondary_color;
+  font-family: $secondary_font;
+
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 4px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.8px);
+  -webkit-backdrop-filter: blur(3.8px);
+  border: 1px solid rgba(255, 255, 255, 0.46);
+}
+
+.inputTextArea {
+  font-size: 1rem;
+  width: 100%;
+  height: 120px;
+  padding: 15px 8px 15px 8px;
+  color: $secondary_color;
+  font-family: $secondary_font;
+  resize: none;
+
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 4px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.8px);
+  -webkit-backdrop-filter: blur(3.8px);
+  border: 1px solid rgba(255, 255, 255, 0.46);
+}
+
+.inputText:focus {
+  outline: none;
+  margin: 0px;
+}
+
+.inputTextArea:focus {
+  outline: none;
+  margin: 0px;
+}
+
+.inputText:focus + .floatingLabel {
+  top: -45px;
+}
+
+.inputTextArea:focus + .floatingLabel {
+  top: -45px;
+}
+
+.inputText:not(:placeholder-shown) + .floatingLabel {
+  top: -45px;
+}
+
+.inputTextArea:not(:placeholder-shown) + .floatingLabel {
+  top: -45px;
+}
+
+.invalidInput {
+  outline: 1px solid #d60d0d;
+  border: none;
+}
+
+.errorText {
+  position: absolute;
+  margin: 8px 0 0 8px;
+  color: #d60d0d;
+  font-size: 0.9rem;
+  text-transform: lowercase;
+  font-weight: bold;
+}
+
+.errorText::first-letter {
+  text-transform: capitalize;
+}

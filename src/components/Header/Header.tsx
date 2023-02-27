@@ -24,7 +24,6 @@ const Header = () => {
         <div className={styles.tvControls}>
           <TVButtonNav url="/" name="Home" />
           <TVButtonNav url="/projects" name="Projects" />
-          <TVButtonNav url="/skills" name="Skills" />
           <TVButtonNav url="/contact" name="Contact" />
           <TVButtonGeneric onClick={toggleEffects} name="Serious" />
           <div className={styles.powerContainer}>

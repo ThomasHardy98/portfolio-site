@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 
 import Footer from "components/Footer/Footer";
+import ContactForm from "components/Forms/ContactForm";
 
 import styles from "pages/ContactPage.module.scss";
 
@@ -26,7 +27,8 @@ const ContactPage = () => {
       className={styles.pageContainer}
     >
       <main className={styles.mainContainer}>
-        <div>This is the contact page.</div>
+        <div className={styles.contactContainer}>Contact information</div>
+        <ContactForm />
       </main>
       <Footer />
     </motion.div>

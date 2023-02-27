@@ -15,8 +15,15 @@
 .mainContainer {
   display: flex;
   position: relative;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-direction: row;
   flex-grow: 1;
   color: $secondary_color;
+  width: 100%;
+}
+
+.contactContainer {
+  flex: 1;
+  text-align: center;
 }

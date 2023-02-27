@@ -1,5 +1,9 @@
 @import "styles/fonts.scss";
 
+:global(*) {
+  box-sizing: border-box;
+}
+
 :global(body) {
   margin: 0;
 }
