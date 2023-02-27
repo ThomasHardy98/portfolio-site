@@ -26,6 +26,7 @@ const ContactForm = () => {
   } = useForm<ContactData>({ mode: "onBlur", resolver: yupResolver(schema) });
 
   const onSubmit: SubmitHandler<ContactData> = (data) => {
+    // Send email using entered details
     send(
       import.meta.env.VITE_EMAIL_SERVICE_ID,
       import.meta.env.VITE_EMAIL_TEMPLATE_ID,
