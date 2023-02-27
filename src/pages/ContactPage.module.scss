@@ -25,5 +25,33 @@
 
 .contactContainer {
   flex: 1;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.innerTextContainer {
+  width: 75%;
+  text-align: left;
+  padding: 20px;
+  border-radius: 4px;
+
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.8px);
+  -webkit-backdrop-filter: blur(3.8px);
+  border: 1px solid rgba(255, 255, 255, 0.46);
+}
+
+.subHeading {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.4rem;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.contentText {
+  margin: 0;
+  a {
+    color: $secondary_color;
+  }
 }

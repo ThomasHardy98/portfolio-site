@@ -19,7 +19,7 @@
 
 .fieldContainer {
   position: relative;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
 
 .floatingLabel {
@@ -50,6 +50,7 @@
   backdrop-filter: blur(3.8px);
   -webkit-backdrop-filter: blur(3.8px);
   border: 1px solid rgba(255, 255, 255, 0.46);
+  transition: 0.3s ease-in-out;
 }
 
 .inputTextArea {
@@ -67,6 +68,7 @@
   backdrop-filter: blur(3.8px);
   -webkit-backdrop-filter: blur(3.8px);
   border: 1px solid rgba(255, 255, 255, 0.46);
+  transition: 0.3s ease-in-out;
 }
 
 .inputText:focus {
@@ -98,10 +100,11 @@
 .invalidInput {
   outline: 1px solid #d60d0d;
   border: none;
+  transition: 0.3s ease-in-out;
 }
 
 .errorText {
-  position: absolute;
+  position: relative;
   margin: 8px 0 0 8px;
   color: #d60d0d;
   font-size: 0.9rem;
@@ -111,6 +114,24 @@
 
 .errorText::first-letter {
   text-transform: capitalize;
+}
+
+.submitButton {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  background-color: $secondary_color;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  border-radius: 4px;
+  transition: 0.2s;
+  font-weight: bold;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background-color: rgb(182, 182, 182);
 }
 
 .successMessage {

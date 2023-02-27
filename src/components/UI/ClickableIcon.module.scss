@@ -1,3 +1,5 @@
+@import "../../styles/colors.scss";
+
 .clickableIconLink {
   margin: 14px;
 }
@@ -6,7 +8,7 @@
   display: block;
   width: 40px;
   height: 40px;
-  fill: #fdfdfd;
+  fill: $secondary_color;
   transition: 0.2s;
 }
 

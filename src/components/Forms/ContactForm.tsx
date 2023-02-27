@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -95,7 +95,9 @@ const ContactForm = () => {
             <p className={styles.errorText}>{errors.message?.message}</p>
           )}
         </div>
-        <button type="submit">Submit</button>
+        <button className={styles.submitButton} type="submit">
+          Submit
+        </button>
         {emailSent && (
           <div className={styles.successMessage}>
             Email was successfully sent

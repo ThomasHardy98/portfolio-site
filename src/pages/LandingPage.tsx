@@ -35,10 +35,10 @@ const LandingPage = () => {
           </div>
           <div className={styles.textContainer}>
             <div className={styles.innerTextContainer}>
-              <p className={styles.subHeading}>
+              <h1 className={styles.subHeading}>
                 I'm Thomas Hardy, a Front End Developer with 3 years commercial
                 experience
-              </p>
+              </h1>
               <p className={styles.contentText}>
                 I have experience using HTML5, CSS, JavaScript, ReactJS and
                 Typescript, to help organisations improve the users experience
