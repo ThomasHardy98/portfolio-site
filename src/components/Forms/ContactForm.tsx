@@ -26,10 +26,16 @@ const ContactForm = () => {
     reset,
   } = useForm<ContactData>({ mode: "onBlur", resolver: yupResolver(schema) });
 
+  const [isSending, setIsSending] = useState(false);
   const [emailSent, setEmailSent] = useState(false);
   const [emailError, setEmailError] = useState(false);
 
+  const delay = (time: number) => {
+    return new Promise((resolve) => setTimeout(resolve, time));
+  };
+
   const onSubmit: SubmitHandler<ContactData> = (data) => {
+    setIsSending(true);
     send(
       import.meta.env.VITE_EMAIL_SERVICE_ID,
       import.meta.env.VITE_EMAIL_TEMPLATE_ID,
@@ -37,16 +43,18 @@ const ContactForm = () => {
       import.meta.env.VITE_EMAIL_PUBLIC_API_KEY
     )
       .then((response) => {
-        console.log("Sent");
         reset();
         setEmailSent(true);
         setEmailError(false);
+        setIsSending(false);
+        delay(5000).then(() => setEmailSent(false));
       })
       .catch((err) => {
-        console.log("Failed");
         reset();
         setEmailError(true);
         setEmailSent(false);
+        setIsSending(false);
+        delay(5000).then(() => setEmailError(false));
       });
   };
 
@@ -95,8 +103,13 @@ const ContactForm = () => {
             <p className={styles.errorText}>{errors.message?.message}</p>
           )}
         </div>
-        <button className={styles.submitButton} type="submit">
-          Send
+        <button
+          className={`${styles.submitButton} ${
+            isSending && styles.submitButtonSending
+          }`}
+          type="submit"
+        >
+          {isSending ? "Sending..." : "Send"}
         </button>
         {emailSent && (
           <div className={styles.successMessage}>
