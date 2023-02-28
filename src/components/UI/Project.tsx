@@ -19,7 +19,9 @@ const Project = ({
 }: ProjectProps) => {
   return (
     <div className={styles.projectCard}>
-      <img src={imageSrc} className={styles.projectImage}></img>
+      <div className={styles.projectImageContainer}>
+        <img src={imageSrc} className={styles.projectImage}></img>
+      </div>
       <div className={styles.projectContent}>
         <h1 className={styles.projectTitle}>{title}</h1>
         <p className={styles.projectStack}>{techStack}</p>
