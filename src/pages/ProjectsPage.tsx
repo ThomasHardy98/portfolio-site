@@ -28,20 +28,19 @@ const ProjectsPage = () => {
     >
       <main className={styles.mainContainer}>
         <Project
+          imageSrc="assets/portfolio_picture.png"
+          title="This Portfolio"
+          techStack="ReactJS, TypeScript, React Hook Form, SASS, Prettier, ESLint"
+          description="Short description of the portfolio site."
+          githubLink="https://github.com/ThomasHardy98/portfolio-site"
+        />
+        <Project
           imageSrc="assets/weather_app_picture.png"
           title="Weather App"
-          techStack="ReactJS, Typescript"
+          techStack="ReactJS, Typescript, Axios, Sass, Prettier, ESLint"
           description="Short description of the weather app project."
           githubLink="https://github.com/ThomasHardy98/weather-app"
           liveLink="https://thomashardyweatherapp.com"
-        />
-        <Project
-          imageSrc=""
-          title="Project 2"
-          techStack=""
-          description=""
-          githubLink=""
-          liveLink=""
         />
         <Project
           imageSrc=""

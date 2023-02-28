@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70%;
+  height: 80%;
   color: $secondary_color;
   border-radius: 4px;
   margin: 10px;
@@ -23,10 +23,18 @@
 }
 
 .projectImage {
-  flex: 1;
+  flex: 1 200px;
   width: 100%;
   object-fit: cover;
   border-radius: 4px;
+}
+
+.projectContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 40%;
 }
 
 .projectTitle {
@@ -35,6 +43,7 @@
 }
 
 .projectStack {
+  font-size: 0.9rem;
   margin: 10px 0 10px 0;
 }
 

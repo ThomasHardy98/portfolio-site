@@ -96,7 +96,7 @@ const ContactForm = () => {
           )}
         </div>
         <button className={styles.submitButton} type="submit">
-          Submit
+          Send
         </button>
         {emailSent && (
           <div className={styles.successMessage}>
