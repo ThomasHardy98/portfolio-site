@@ -5,7 +5,7 @@ type ProjectProps = {
   title: string;
   techStack: string;
   description: string;
-  githubLink: string;
+  githubLink?: string;
   liveLink?: string;
 };
 
@@ -19,9 +19,7 @@ const Project = ({
 }: ProjectProps) => {
   return (
     <div className={styles.projectCard}>
-      <div className={styles.projectImageContainer}>
-        <img src={imageSrc} className={styles.projectImage}></img>
-      </div>
+      <img src={imageSrc} className={styles.projectImage}></img>
       <div className={styles.projectContent}>
         <h1 className={styles.projectTitle}>{title}</h1>
         <p className={styles.projectStack}>{techStack}</p>
@@ -32,9 +30,11 @@ const Project = ({
               Live Site
             </a>
           )}
-          <a className={styles.button} href={githubLink} target="_blank">
-            Source Code
-          </a>
+          {githubLink && (
+            <a className={styles.button} href={githubLink} target="_blank">
+              Source Code
+            </a>
+          )}
         </div>
       </div>
     </div>
