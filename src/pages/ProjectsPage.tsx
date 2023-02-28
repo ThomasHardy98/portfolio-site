@@ -30,15 +30,15 @@ const ProjectsPage = () => {
         <Project
           imageSrc="assets/portfolio_picture.png"
           title="This Portfolio"
-          techStack="ReactJS, TypeScript, React Hook Form, SASS, Prettier, ESLint"
-          description="Short description of the portfolio site."
+          techStack="ReactJS, TypeScript, React Hook Form, Sass, Prettier, ESLint"
+          description="I created this portfolio so I could showcase the work I have been doing using ReactJS and the MERN stack."
           githubLink="https://github.com/ThomasHardy98/portfolio-site"
         />
         <Project
           imageSrc="assets/weather_app_picture.png"
           title="Weather App"
           techStack="ReactJS, Typescript, Axios, Sass, Prettier, ESLint"
-          description="Short description of the weather app project."
+          description="This project was created to showcase my ability to call an API asynchronously with error handling and manage its response data."
           githubLink="https://github.com/ThomasHardy98/weather-app"
           liveLink="https://thomashardyweatherapp.com"
         />
