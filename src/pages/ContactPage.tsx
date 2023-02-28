@@ -34,7 +34,7 @@ const ContactPage = () => {
               Fill out my contact form or contact me using my email below.
               <br />
               <br />{" "}
-              <a href="mailto:tj.hardy77@yahoo.co.uk">tj.hardy77@yahoo.co.uk</a>
+              <a href="mailto:thegrid58@gmail.com">thegrid58@gmail.com</a>
             </p>
           </div>
         </div>
