@@ -93,3 +93,10 @@
     font-size: 0.8rem;
   }
 }
+
+@media only screen and (max-height: 600px) {
+  .projectCard {
+    min-height: 400px;
+    padding: 10px;
+  }
+}

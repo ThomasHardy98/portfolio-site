@@ -39,3 +39,11 @@
     padding: 0 $small_padding 0 $small_padding;
   }
 }
+
+@media only screen and (max-height: 600px) {
+  .pageContainer {
+    padding: $small_padding;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

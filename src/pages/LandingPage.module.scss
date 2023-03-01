@@ -131,3 +131,9 @@
     min-width: 140px;
   }
 }
+
+@media only screen and (max-height: 600px) {
+  .pageContainer {
+    padding: $small_padding;
+  }
+}
