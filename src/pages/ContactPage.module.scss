@@ -17,17 +17,24 @@
   position: relative;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
   flex-grow: 1;
   color: $secondary_color;
   width: 100%;
+}
+
+.contentContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 900px;
 }
 
 .contactContainer {
   flex: 1;
   display: flex;
   justify-content: center;
-  max-width: 600px;
 }
 
 .innerTextContainer {
@@ -63,6 +70,10 @@
   }
 
   .mainContainer {
+    align-items: unset;
+  }
+
+  .contentContainer {
     flex-direction: column;
     justify-content: space-evenly;
   }

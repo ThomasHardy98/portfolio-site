@@ -38,15 +38,14 @@
 
 .pageLoadText {
   display: flex;
-  color: $secondary_color;
-  font-size: 2em;
   gap: 16px;
-  letter-spacing: 1.6px;
   text-shadow: 0 0 8px green;
 }
 
 .textOne {
+  font-size: 1rem;
   font-weight: 200;
+  letter-spacing: 1.6px;
   overflow: hidden;
   color: green;
   border-right: 0.1em solid green;
@@ -120,5 +119,11 @@
   }
   to {
     border-color: green;
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  .textOne {
+    font-size: 0.7rem;
   }
 }

@@ -27,18 +27,20 @@ const ContactPage = () => {
       className={styles.pageContainer}
     >
       <main className={styles.mainContainer}>
-        <div className={styles.contactContainer}>
-          <div className={styles.innerTextContainer}>
-            <h1 className={styles.subHeading}>Want to contact me?</h1>
-            <p className={styles.contentText}>
-              Fill out my contact form or contact me using my email below.
-              <br />
-              <br />{" "}
-              <a href="mailto:thegrid58@gmail.com">thegrid58@gmail.com</a>
-            </p>
+        <div className={styles.contentContainer}>
+          <div className={styles.contactContainer}>
+            <div className={styles.innerTextContainer}>
+              <h1 className={styles.subHeading}>Want to contact me?</h1>
+              <p className={styles.contentText}>
+                Fill out my contact form or contact me using my email below.
+                <br />
+                <br />{" "}
+                <a href="mailto:thegrid58@gmail.com">thegrid58@gmail.com</a>
+              </p>
+            </div>
           </div>
+          <ContactForm />
         </div>
-        <ContactForm />
       </main>
       <Footer />
     </motion.div>

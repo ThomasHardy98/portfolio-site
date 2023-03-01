@@ -24,10 +24,12 @@
 }
 
 .contentContainer {
+  flex: 1;
   display: flex;
-  width: 100%;
+  justify-content: center;
   align-items: center;
   text-align: center;
+  max-width: 900px;
 }
 
 .headingContainer {
@@ -93,13 +95,13 @@
     padding: $small_padding;
   }
 
+  .mainContainer {
+    align-items: unset;
+  }
+
   .contentContainer {
     flex-direction: column;
     justify-content: space-evenly;
-  }
-
-  .mainContainer {
-    align-items: unset;
   }
 
   .innerTextContainer {
