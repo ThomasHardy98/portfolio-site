@@ -27,6 +27,8 @@
 @media only screen and (max-width: $tablet) {
   .pageContainer {
     padding: $small_padding;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .mainContainer {
