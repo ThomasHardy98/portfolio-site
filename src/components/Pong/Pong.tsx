@@ -8,9 +8,11 @@ const Pong = () => {
         <b>7</b>
       </div>
       <div className={styles.horizontal}>
-        <span className={styles.ball}></span>
-        <span className={styles.playerOne}></span>
-        <span className={styles.playerTwo}></span>
+        <div className={styles.ballWrapper}>
+          <div className={styles.ball}></div>
+        </div>
+        <div className={styles.playerOne}></div>
+        <div className={styles.playerTwo}></div>
       </div>
     </div>
   );
