@@ -15,8 +15,9 @@ function App() {
 
   return (
     <Fragment>
-      <PageLoad />
       <div className={`${styles.contentContainer} ${styles.retroEffects}`}>
+        <PageLoad />
+        <div id={styles.borderEffect}></div>
         {effCtx.useRetro && <Pong />}
         <AnimatedRoutes />
       </div>

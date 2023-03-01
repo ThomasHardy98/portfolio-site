@@ -56,3 +56,33 @@
     color: $secondary_color;
   }
 }
+
+@media only screen and (max-width: 930px) {
+  .pageContainer {
+    padding: $small_padding;
+  }
+
+  .mainContainer {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .contactContainer {
+    max-width: unset;
+    width: 100%;
+    flex: none;
+    margin-bottom: 40px;
+  }
+
+  .innerTextContainer {
+    width: 100%;
+  }
+
+  .subHeading {
+    font-size: 1.1rem;
+  }
+
+  .contentText {
+    font-size: 0.8rem;
+  }
+}

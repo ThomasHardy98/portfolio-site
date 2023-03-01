@@ -25,7 +25,7 @@
 
 .contentContainer {
   display: flex;
-  width: 70%;
+  width: 100%;
   align-items: center;
   text-align: center;
 }
@@ -83,6 +83,46 @@
 
 .profileImage {
   width: 40%;
+  min-width: 200px;
   max-width: 400px;
   border-radius: 50%;
+}
+
+@media only screen and (max-width: 930px) {
+  .pageContainer {
+    padding: $small_padding;
+  }
+
+  .contentContainer {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .mainContainer {
+    align-items: unset;
+  }
+
+  .innerTextContainer {
+    width: 100%;
+  }
+
+  .textContainer {
+    flex: unset;
+  }
+
+  .imageContainer {
+    flex: unset;
+  }
+
+  .subHeading {
+    font-size: 1.1rem;
+  }
+
+  .contentText {
+    font-size: 0.8rem;
+  }
+
+  .profileImage {
+    min-width: 140px;
+  }
 }

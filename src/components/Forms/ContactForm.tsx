@@ -61,47 +61,49 @@ const ContactForm = () => {
   return (
     <div className={styles.formWrapper}>
       <form className={styles.formContainer} onSubmit={handleSubmit(onSubmit)}>
-        <div className={styles.fieldContainer}>
-          <input
-            className={`${styles.inputText} ${
-              errors.name?.message && styles.invalidInput
-            }`}
-            {...register("name")}
-            type="text"
-            placeholder=" "
-          />
-          <label className={styles.floatingLabel}>Name</label>
-          {errors.name?.message && (
-            <p className={styles.errorText}>{errors.name?.message}</p>
-          )}
-        </div>
-        <div className={styles.fieldContainer}>
-          <input
-            className={`${styles.inputText} ${
-              errors.email?.message && styles.invalidInput
-            }`}
-            {...register("email")}
-            type="email"
-            placeholder=" "
-            formNoValidate
-          />
-          <label className={styles.floatingLabel}>Email</label>
-          {errors.email?.message && (
-            <p className={styles.errorText}>{errors.email?.message}</p>
-          )}
-        </div>
-        <div className={styles.fieldContainer}>
-          <textarea
-            className={`${styles.inputTextArea} ${
-              errors.message?.message && styles.invalidInput
-            }`}
-            {...register("message")}
-            placeholder=" "
-          />
-          <label className={styles.floatingLabel}>Message</label>
-          {errors.message?.message && (
-            <p className={styles.errorText}>{errors.message?.message}</p>
-          )}
+        <div className={styles.fieldInputs}>
+          <div className={styles.fieldContainer}>
+            <input
+              className={`${styles.inputText} ${
+                errors.name?.message && styles.invalidInput
+              }`}
+              {...register("name")}
+              type="text"
+              placeholder=" "
+            />
+            <label className={styles.floatingLabel}>Name</label>
+            {errors.name?.message && (
+              <p className={styles.errorText}>{errors.name?.message}</p>
+            )}
+          </div>
+          <div className={styles.fieldContainer}>
+            <input
+              className={`${styles.inputText} ${
+                errors.email?.message && styles.invalidInput
+              }`}
+              {...register("email")}
+              type="email"
+              placeholder=" "
+              formNoValidate
+            />
+            <label className={styles.floatingLabel}>Email</label>
+            {errors.email?.message && (
+              <p className={styles.errorText}>{errors.email?.message}</p>
+            )}
+          </div>
+          <div className={styles.fieldContainer}>
+            <textarea
+              className={`${styles.inputTextArea} ${
+                errors.message?.message && styles.invalidInput
+              }`}
+              {...register("message")}
+              placeholder=" "
+            />
+            <label className={styles.floatingLabel}>Message</label>
+            {errors.message?.message && (
+              <p className={styles.errorText}>{errors.message?.message}</p>
+            )}
+          </div>
         </div>
         <button
           className={`${styles.submitButton} ${

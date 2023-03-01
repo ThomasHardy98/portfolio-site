@@ -14,7 +14,7 @@ const PageLoad = () => {
   return (
     <Fragment>
       {showElement && (
-        <div className={styles.loadingContainer}>
+        <Fragment>
           <div className={styles.pageLoad}>
             <div className={styles.pageLoadText}>
               <p className={styles.textOne}>
@@ -23,7 +23,7 @@ const PageLoad = () => {
             </div>
           </div>
           <div className={styles.tvOn} />
-        </div>
+        </Fragment>
       )}
     </Fragment>
   );

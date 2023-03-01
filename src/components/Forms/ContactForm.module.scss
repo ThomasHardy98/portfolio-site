@@ -20,6 +20,9 @@
 
 .fieldContainer {
   position: relative;
+}
+
+.fieldContainer:not(:last-child) {
   margin-bottom: 40px;
 }
 
@@ -124,6 +127,7 @@
   text-decoration: none;
   color: black;
   padding: 10px;
+  margin-top: 40px;
   border-radius: 4px;
   transition: 0.2s;
   font-weight: bold;
@@ -169,4 +173,21 @@
   backdrop-filter: blur(3.8px);
   -webkit-backdrop-filter: blur(3.8px);
   border: 1px solid red;
+}
+
+@media only screen and (max-width: 930px) {
+  .formWrapper {
+    max-width: unset;
+    width: 100%;
+    height: auto;
+    flex: unset;
+  }
+
+  .formContainer {
+    width: 100%;
+  }
+
+  .submitButton {
+    margin-top: 10px;
+  }
 }

@@ -22,3 +22,9 @@
   color: $secondary_color;
   width: 100%;
 }
+
+@media only screen and (max-width: 930px) {
+  .pageContainer {
+    padding: $small_padding;
+  }
+}

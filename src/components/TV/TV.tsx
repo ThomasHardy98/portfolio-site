@@ -18,7 +18,6 @@ const TV = () => {
         </div>
         <Header />
       </div>
-      <div id={styles.borderEffect}></div>
     </Fragment>
   );
 };

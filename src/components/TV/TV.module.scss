@@ -12,25 +12,16 @@
 
 #tvBorder {
   position: relative;
-  height: 93%;
+  height: 100%;
   width: 100%;
   background: linear-gradient(178deg, #141414 0%, #141414 100%);
   pointer-events: none;
+  padding: 40px;
+  padding-bottom: 0;
 }
 
-#borderEffect {
-  position: fixed;
-  width: $screen_size_width;
-  height: $screen_size_height;
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/86186/crt.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  z-index: 2;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 20px;
-  border: 1px solid;
-  pointer-events: none;
-  opacity: 0.5;
+@media only screen and (max-width: 930px) {
+  #tvBorder {
+    padding: $small_padding;
+  }
 }
