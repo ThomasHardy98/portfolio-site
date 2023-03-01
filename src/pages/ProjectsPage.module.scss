@@ -22,6 +22,7 @@
   flex-grow: 1;
   color: $secondary_color;
   width: 100%;
+  gap: 20px;
 }
 
 @media only screen and (max-width: $tablet) {
@@ -34,5 +35,7 @@
   .mainContainer {
     justify-content: start;
     overflow: scroll;
+    gap: 10px;
+    padding: 0 20px 0 20px;
   }
 }
