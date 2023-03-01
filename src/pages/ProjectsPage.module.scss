@@ -27,14 +27,10 @@
 @media only screen and (max-width: $tablet) {
   .pageContainer {
     padding: $small_padding;
-    padding-right: 0;
-    padding-left: 0;
   }
 
   .mainContainer {
     justify-content: start;
     overflow: scroll;
-    padding: 0;
-    margin: auto;
   }
 }
