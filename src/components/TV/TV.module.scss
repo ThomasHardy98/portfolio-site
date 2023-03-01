@@ -1,5 +1,6 @@
 @import "../../styles/colors.scss";
 @import "../../styles/spacing.scss";
+@import "../../styles/media-sizes.scss";
 
 .tvContainer {
   height: 100%;
@@ -20,7 +21,7 @@
   padding-bottom: 0;
 }
 
-@media only screen and (max-width: 930px) {
+@media only screen and (max-width: $tablet) {
   #tvBorder {
     padding: $small_padding;
   }

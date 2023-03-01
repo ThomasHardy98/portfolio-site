@@ -1,5 +1,6 @@
 @import "../styles/colors.scss";
 @import "../styles/spacing.scss";
+@import "../styles/media-sizes.scss";
 
 .pageContainer {
   flex: 1;
@@ -64,7 +65,7 @@
   }
 }
 
-@media only screen and (max-width: 930px) {
+@media only screen and (max-width: $tablet) {
   .pageContainer {
     padding: $small_padding;
   }

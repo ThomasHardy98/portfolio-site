@@ -1,4 +1,5 @@
 @import "../../styles/colors.scss";
+@import "../../styles/media-sizes.scss";
 
 .tvDetailsWrapper {
   width: 100%;
@@ -102,7 +103,7 @@
   }
 }
 
-@media only screen and (max-width: 930px) {
+@media only screen and (max-width: $tablet) {
   .tvDetailsWrapper {
     padding-top: 0;
   }

@@ -1,5 +1,6 @@
 @import "../../styles/colors.scss";
 @import "../../styles/fonts.scss";
+@import "../../styles/media-sizes.scss";
 
 .formWrapper {
   display: flex;
@@ -175,7 +176,7 @@
   border: 1px solid red;
 }
 
-@media only screen and (max-width: 930px) {
+@media only screen and (max-width: $tablet) {
   .formWrapper {
     max-width: unset;
     width: 100%;

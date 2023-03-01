@@ -1,6 +1,7 @@
 @import "../styles/spacing.scss";
 @import "../styles/colors.scss";
 @import "../styles/fonts.scss";
+@import "../styles/media-sizes.scss";
 
 .pageContainer {
   flex: 1;
@@ -90,7 +91,7 @@
   border-radius: 50%;
 }
 
-@media only screen and (max-width: 930px) {
+@media only screen and (max-width: $tablet) {
   .pageContainer {
     padding: $small_padding;
   }

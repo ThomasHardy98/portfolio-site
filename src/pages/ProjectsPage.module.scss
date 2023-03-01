@@ -1,6 +1,7 @@
 @import "../styles/spacing.scss";
 @import "../styles/colors.scss";
 @import "../styles/spacing.scss";
+@import "../styles/media-sizes.scss";
 
 .pageContainer {
   flex: 1;
@@ -23,8 +24,17 @@
   width: 100%;
 }
 
-@media only screen and (max-width: 930px) {
+@media only screen and (max-width: $tablet) {
   .pageContainer {
     padding: $small_padding;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .mainContainer {
+    justify-content: start;
+    overflow-x: scroll;
+    padding-right: 14px;
+    padding-left: 14px;
   }
 }
