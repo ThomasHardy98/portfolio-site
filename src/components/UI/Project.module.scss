@@ -47,11 +47,12 @@
 }
 
 .projectStack {
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin: 10px 0 10px 0;
 }
 
 .projectDescription {
+  font-size: 0.9rem;
   margin: 10px 0 10px 0;
 }
 
@@ -83,6 +84,10 @@
   .projectCard {
     min-height: 400px;
     padding: 10px;
+  }
+
+  .projectStack {
+    font-size: 0.9rem;
   }
 
   .projectTitle {
