@@ -80,11 +80,9 @@
   }
 
   .contactContainer {
-    //max-width: unset;
-    //width: 100%;
-    //flex: none;
-
-    display: none;
+    max-width: unset;
+    width: 100%;
+    flex: none;
   }
 
   .innerTextContainer {
@@ -93,7 +91,7 @@
   }
 
   .subHeading {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .contentText {
