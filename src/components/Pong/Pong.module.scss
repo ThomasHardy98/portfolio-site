@@ -75,10 +75,10 @@
 
 @keyframes leftright {
   from {
-    transform: translate(21px, 0);
+    transform: translate(1%, 0);
   }
   to {
-    transform: translate(calc(100% - 42px), 0);
+    transform: translate(98%, 0);
   }
 }
 
@@ -88,5 +88,16 @@
   }
   to {
     transform: translate(0, 100%);
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  @keyframes leftright {
+    from {
+      transform: translate(1%, 0);
+    }
+    to {
+      transform: translate(95%, 0);
+    }
   }
 }
