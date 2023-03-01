@@ -9,13 +9,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background: linear-gradient(178deg, #141414 0%, #141414 100%);
 }
 
 #tvBorder {
   position: relative;
   height: 100%;
   width: 100%;
-  background: linear-gradient(178deg, #141414 0%, #141414 100%);
   pointer-events: none;
   padding: 40px;
   padding-bottom: 0;
