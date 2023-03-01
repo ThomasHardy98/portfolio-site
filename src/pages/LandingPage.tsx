@@ -41,7 +41,7 @@ const LandingPage = () => {
               </h1>
               <p className={styles.contentText}>
                 I have experience using HTML5, CSS, JavaScript, ReactJS and
-                Typescript, to help organisations improve the users experience
+                Typescript, to help organisations improve their user experience
                 within their applications.
                 <br />
                 <br /> With exposure to the MERN stack and hands-on experience

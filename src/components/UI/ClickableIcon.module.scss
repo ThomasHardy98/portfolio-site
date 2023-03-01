@@ -1,4 +1,5 @@
 @import "../../styles/colors.scss";
+@import "../../styles/media-sizes.scss";
 
 .clickableIconLink {
   margin: 14px;
@@ -14,4 +15,15 @@
 
 .clickableIconImage:hover {
   fill: rgb(182, 182, 182);
+}
+
+@media only screen and (max-width: $tablet) {
+  .clickableIconLink {
+    margin: 7px;
+  }
+
+  .clickableIconImage {
+    width: 30px;
+    height: 30px;
+  }
 }
