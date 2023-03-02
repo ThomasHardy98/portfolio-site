@@ -1,10 +1,14 @@
 import { motion } from "framer-motion";
 
+import useImagePreloader from "~/hooks/useImagePreloader";
+
 import Footer from "components/Footer/Footer";
 
 import styles from "pages/LandingPage.module.scss";
 
 const LandingPage = () => {
+  const { imagesPreloaded } = useImagePreloader(["assets/profile_picture.jpg"]);
+
   return (
     <motion.div
       initial={{
@@ -28,10 +32,14 @@ const LandingPage = () => {
       <main className={styles.mainContainer}>
         <div className={styles.contentContainer}>
           <div className={styles.imageContainer}>
-            <img
-              src="assets/profile_picture.jpg"
-              className={styles.profileImage}
-            ></img>
+            {imagesPreloaded ? (
+              <img
+                src="assets/profile_picture.jpg"
+                className={styles.profileImage}
+              />
+            ) : (
+              <p className={styles.loadingText}>Image loading...</p>
+            )}
           </div>
           <div className={styles.textContainer}>
             <div className={styles.innerTextContainer}>
