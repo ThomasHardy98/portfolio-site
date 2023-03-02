@@ -9,8 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/86186/crt.png"),
-    linear-gradient(to bottom, #060606 0%, #141414 100%);
+  background: rgb(10, 10, 10);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   animation: fadeOutPage 4s ease-out forwards;
