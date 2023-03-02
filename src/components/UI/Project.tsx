@@ -19,16 +19,15 @@ const Project = ({
   githubLink,
   liveLink,
 }: ProjectProps) => {
-  if (imageSrc) {
-    const { imagesPreloaded } = useImagePreloader([imageSrc]);
-    if (!imagesPreloaded) {
-      return <p>Preloading Assets</p>;
-    }
-  }
+  const { imagesPreloaded } = useImagePreloader([imageSrc]);
 
   return (
     <div className={styles.projectCard}>
-      <img src={imageSrc} className={styles.projectImage}></img>
+      {!imagesPreloaded ? (
+        <p className={styles.loadingText}>Image loading...</p>
+      ) : (
+        <img src={imageSrc} className={styles.projectImage} />
+      )}
       <div className={styles.projectContent}>
         <h1 className={styles.projectTitle}>{title}</h1>
         <p className={styles.projectStack}>{techStack}</p>

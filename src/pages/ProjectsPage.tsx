@@ -42,22 +42,6 @@ const ProjectsPage = () => {
           githubLink="https://github.com/ThomasHardy98/weather-app"
           liveLink="https://thomashardyweatherapp.com"
         />
-        <Project
-          imageSrc=""
-          title="Project 3"
-          techStack=""
-          description=""
-          githubLink=""
-          liveLink=""
-        />
-        <Project
-          imageSrc=""
-          title="Project 4"
-          techStack=""
-          description=""
-          githubLink=""
-          liveLink=""
-        />
       </main>
       <Footer />
     </motion.div>
