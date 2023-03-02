@@ -11,8 +11,6 @@ import styles from "App.module.scss";
 function App() {
   const effCtx = useContext(EffectsContext);
 
-  // Add theme switching, when serious button is pressed. Remove pong and switch to light readable theme
-
   return (
     <Fragment>
       <div className={`${styles.contentContainer} ${styles.retroEffects}`}>

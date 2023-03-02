@@ -1,3 +1,5 @@
+import useImagePreloader from "hooks/useImagePreloader";
+
 import styles from "components/UI/Project.module.scss";
 
 type ProjectProps = {
@@ -17,6 +19,13 @@ const Project = ({
   githubLink,
   liveLink,
 }: ProjectProps) => {
+  if (imageSrc) {
+    const { imagesPreloaded } = useImagePreloader([imageSrc]);
+    if (!imagesPreloaded) {
+      return <p>Preloading Assets</p>;
+    }
+  }
+
   return (
     <div className={styles.projectCard}>
       <img src={imageSrc} className={styles.projectImage}></img>
