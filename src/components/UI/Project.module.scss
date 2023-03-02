@@ -26,10 +26,16 @@
   border: 1px solid rgba(255, 255, 255, 0.46);
 }
 
-.loadingText {
+.imageContainer {
+  display: flex;
+  flex: 1;
   justify-content: center;
-  text-align: center;
   align-items: center;
+}
+
+.loadingText {
+  margin: 0;
+  font-size: 0.6rem;
 }
 
 .projectImage {
