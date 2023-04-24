@@ -42,6 +42,14 @@ const ProjectsPage = () => {
           githubLink="https://github.com/ThomasHardy98/weather-app"
           liveLink="https://thomashardyweatherapp.com"
         />
+        <Project
+          imageSrc="assets/to-do_list_picture.png"
+          title="To-do List"
+          techStack="ReactJS, Typescript, Sass, Font Awesome"
+          description="A simple react project utilising context and local storage to create and store a to-do list with the ability to add, edit and delete tasks."
+          githubLink="https://github.com/ThomasHardy98/to-do-list"
+          liveLink="https://thomashardytodolist.com"
+        />
       </main>
       <Footer />
     </motion.div>
