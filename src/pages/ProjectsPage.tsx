@@ -50,6 +50,14 @@ const ProjectsPage = () => {
           githubLink="https://github.com/ThomasHardy98/to-do-list"
           liveLink="https://thomashardytodolist.com"
         />
+        <Project
+          imageSrc="assets/expense-tracker_picture.png"
+          title="Expense Tracker"
+          techStack="ReactJS, Typescript, Sass, CSS Modules, Font Awesome"
+          description="A similar project to my to-do list, however it focuses more on my CSS skills, displaying data in an easy to read format."
+          githubLink="https://github.com/ThomasHardy98/expenses-tracker"
+          liveLink="https://thomashardyexpensetracker.com"
+        />
       </main>
       <Footer />
     </motion.div>
