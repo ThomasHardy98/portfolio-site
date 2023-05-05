@@ -34,8 +34,10 @@ const ContactPage = () => {
               <p className={styles.contentText}>
                 Fill out my contact form or contact me using my email below.
                 <br />
-                <br />{" "}
-                <a href="mailto:thegrid58@gmail.com">thegrid58@gmail.com</a>
+                <br />
+                <a href="mailto:tj.hardy77@yahoo.co.uk">
+                  tj.hardy77@yahoo.co.uk
+                </a>
               </p>
             </div>
           </div>
