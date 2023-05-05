@@ -9,6 +9,7 @@ type ProjectProps = {
   description: string;
   githubLink?: string;
   liveLink?: string;
+  buttonName?: string;
 };
 
 const Project = ({
@@ -18,6 +19,7 @@ const Project = ({
   description,
   githubLink,
   liveLink,
+  buttonName,
 }: ProjectProps) => {
   const { imagesPreloaded } = useImagePreloader([imageSrc]);
 
@@ -37,7 +39,7 @@ const Project = ({
         <div className={styles.buttonWrapper}>
           {liveLink && (
             <a className={styles.button} href={liveLink} target="_blank">
-              Live Site
+              {buttonName || "Live Site"}
             </a>
           )}
           {githubLink && (

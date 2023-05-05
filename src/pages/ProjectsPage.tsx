@@ -58,6 +58,15 @@ const ProjectsPage = () => {
           githubLink="https://github.com/ThomasHardy98/expenses-tracker"
           liveLink="https://thomashardyexpensetracker.com"
         />
+        <Project
+          imageSrc="assets/booking-app-designs_picture.png"
+          title="Booking App Wireframe"
+          techStack="Adobe XD"
+          description="As a personal project I needed to create an interactive wireframe for the business side of a booking SPA. 
+          I mocked up this in Adobe XD to show my ability to not only implement, but design as well. This is an early version wireframe without colour."
+          liveLink="https://xd.adobe.com/view/50f4f28f-488d-4d96-bfcb-dd6f5b8f50c0-05a7/grid?fbclid=IwAR1egO4SFXNWDthrDNUu6CxSQxKDW36MlsjVr-06OsWR5R59ITez_4nqyV0"
+          buttonName="View design"
+        />
       </main>
       <Footer />
     </motion.div>
