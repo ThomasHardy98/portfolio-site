@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 
 import useImagePreloader from "~/hooks/useImagePreloader";
@@ -7,6 +8,10 @@ import Footer from "components/Footer/Footer";
 import styles from "pages/LandingPage.module.scss";
 
 const LandingPage = () => {
+  useEffect(() => {
+    document.title = "Thomas Hardy - React Developer";
+  }, []);
+
   const { imagesPreloaded } = useImagePreloader(["assets/profile_picture.jpg"]);
 
   return (

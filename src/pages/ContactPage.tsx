@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 
 import Footer from "components/Footer/Footer";
@@ -6,6 +7,10 @@ import ContactForm from "components/Forms/ContactForm";
 import styles from "pages/ContactPage.module.scss";
 
 const ContactPage = () => {
+  useEffect(() => {
+    document.title = "Thomas Hardy - Contact Me";
+  }, []);
+
   return (
     <motion.div
       initial={{

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 
 import Footer from "components/Footer/Footer";
@@ -6,6 +7,10 @@ import Project from "components/UI/Project";
 import styles from "pages/ProjectsPage.module.scss";
 
 const ProjectsPage = () => {
+  useEffect(() => {
+    document.title = "Thomas Hardy - Projects";
+  }, []);
+
   return (
     <motion.div
       initial={{
