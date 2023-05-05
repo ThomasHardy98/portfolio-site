@@ -13,7 +13,7 @@ const Footer = () => {
         name="linkedin"
         destination="https://www.linkedin.com/in/thomasrhardy"
       />
-      <ClickableIcon name="cv" destination="assets/cv.pdf" />
+      <ClickableIcon name="cv" destination="assets/Thomas_Hardy_CV.pdf" />
     </footer>
   );
 };
