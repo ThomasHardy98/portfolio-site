@@ -1,18 +1,19 @@
 @import "styles/fonts.scss";
 
-:global(*) {
+* {
   box-sizing: border-box;
 }
 
-:global(body) {
+body {
   margin: 0;
+  height: 100%;
 }
 
-:global(h1) {
+h1 {
   font-family: $primary_font;
 }
 
-:global(p) {
+p {
   font-family: $secondary_font;
   font-size: 1rem;
 }
